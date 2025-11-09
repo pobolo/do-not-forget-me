@@ -1,0 +1,118 @@
+.wealth-ranking {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.wealth-ranking h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ranking-item:hover {
+  transform: translateX(5px);
+}
+
+.ranking-item:nth-child(1) {
+  border-left: 4px solid #ffd700;
+}
+
+.ranking-item:nth-child(2) {
+  border-left: 4px solid #c0c0c0;
+}
+
+.ranking-item:nth-child(3) {
+  border-left: 4px solid #cd7f32;
+}
+
+.ranking-item:nth-child(n+4) {
+  border-left: 4px solid #667eea;
+}
+
+.rank-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+  min-width: 60px;
+  text-align: center;
+}
+
+.individual-info {
+  flex: 1;
+  margin: 0 1.5rem;
+}
+
+.individual-info .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.individual-info .company {
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.individual-info .industry {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.wealth-info {
+  text-align: right;
+}
+
+.wealth-info .net-worth {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 0.5rem;
+}
+
+.wealth-info .wealth-tier {
+  background: #f0f0f0;
+  color: #666;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .wealth-ranking {
+    padding: 1rem;
+  }
+
+  .ranking-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .individual-info {
+    margin: 0;
+  }
+
+  .wealth-info {
+    text-align: center;
+  }
+}
